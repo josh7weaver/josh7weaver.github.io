@@ -23,7 +23,7 @@ create_scroll_scene = function (event)
     // build array for Experience box IDs (the triggers)
     var IDs = [];
 
-    for ( var i = 0; i <= 11; i++)
+    for ( var i = 0; i <= 13; i++)
     { 
         IDs[i] = "#box" + i;
         

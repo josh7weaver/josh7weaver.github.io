@@ -164,6 +164,7 @@ content {
 }
 #filterHeader{
 	cursor: pointer;
+	background-color: rgb(235, 80, 80);
 	/*color: #FCA4A4;*/
 }
 #filterList,
