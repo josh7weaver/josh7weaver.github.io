@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joshua Weaver</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Merriweather' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+
+  <!-- INCLUDE SCRIPTS BELOW THIS LINE -->
+  <!-- JQUERY & TWEENMAX 
+  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <!-- SCROLLMAGIC JS 
+  -->
+    <script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed 
+  -->
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/filter.js"></script>
+</head>
+
+<body class="relative">
+  
+  <!-- <div id="background-image"></div> -->
+
+  <!-- MESSAGE AREA -->
+  <div id="message" class="hide alert alert-warning">
+    This site is not optimized for viewports less than 1000px wide!
+  </div>
+
+  <!-- SIDEBAR -->
+  <div id="sidebar">  <!-- The sidebar and filter -->
+    <div class="center" id="info">
+    <img id="profileImg" src="img/face.jpg" class="img-responsive img-circle" alt="Responsive image">
+      <h1>Joshua Weaver</h1>
+      <i class="hide">A little bit about me... I’m a husband, educator, and learner. I love to explain things. You can hear more from me by following me on twitter. In my spare time I like to have adventures, rock climb, and make music.</i>
+    </div>
+    
+    <div class="center" id="filterBox">
+      <div class="filterTitle">
+        <h4 id="filterHeader" class="bold">FILTER <span class="glyphicon glyphicon-circle-arrow-up"></span></h4>
+        <h6 id="filterHelperMessage" class="bold">...by Technology Used:</h6>
+      </div>
+      <!-- Add carat image -->
+
+      <ul id="filterList" class="list-group">
+        <li class="list-group-item active">Show all</li>
+        <li data-class=".php" class="list-group-item">PHP</li>
+        <li data-class=".html-css" class="list-group-item">HTML/CSS</li>
+        <li data-class=".expressionengine" class="list-group-item">Expression Engine</li>
+        <li data-class=".rails-github" class="list-group-item">Rails & Github</li>
+        <li data-class=".jquery" class="list-group-item">Jquery</li>
+        <li data-class=".actionscript" class="list-group-item">Flash/Actionscript</li>
+        <li data-class=".joomla" class="list-group-item">Joomla</li>
+        <li data-class=".wordpress" class="list-group-item">Wordpress</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="overlay"><!-- To show the dark overlay -->
+    <div>
+    </div>
+  </div>
+  
+  <div id="wrapper" class="relative">
+
+
+        <section id="box0" class="title center"> <!-- CoverItOnline.com -->
+          <p>I’m a husband, educator, and learner. I love to explain things. In my spare time I like to have adventures, rock climb, and make music.</p>
+          <!-- 
+          <blockquote>
+            <p>"I've traveled life, had my share man, I've been everywhere..."</p>
+            <footer>Johnny Cash '73</footer>
+          </blockquote>
+           -->
+      
+        <div id="downArrow">scroll down for projects I've worked on<br /><span class="glyphicon glyphicon-circle-arrow-down"></span></div>
+        </section>
+
+      <div class="year html-css php"><h3>2006</h3></div>
+
+        <section id="box1" class="experience html-css php"> <!-- CoverItOnline.com -->
+          
+          <h2>Ecommerce is not a Warmup</h2>
+          <img src="img/ecommerce-md.jpg" alt="" class="pull-left img-thumbnail">
+          <p>Gary Alberts needed to sell his truck covers online. Armed with one web design class, I decided that Ecommerce shouldn't be a big deal. I was wrong. Although I had learned the basics of HTML/CSS in my web design course, the shopping cart solution I decided to implement for the site was written in PHP, and the learning curve was sharp, but I managed to get everything working, from tweaking the theme to registering SSL certs. whew!</p>
+      
+        </section>
+
+
+      <div class="year actionscript"> <!-- 2008 -->
+          <h3>2008</h3>
+      </div>
+
+        <section id="box2" class="experience"> <!-- Start working at Techmuscle -->
+          <h2>Started Working for TechMuscle</h2>
+          <img src="img/tm.png" alt="" class="pull-left img-thumbnail addPadding">
+          <p>
+            <a href="www.techmuscle.com">TechMuscle</a> is a web development company in Chicago that specializes in custom web applications. They mostly used C# and .NET languages.
+            <br />
+            I got hired on part-time there, primarily in a Quality Assurance role. Eventually I got to do other things too (more on that below).
+          </p>
+
+        </section>
+
+        <section id="box3" class="experience actionscript"> <!-- White Rose Gallery -->
+          
+              <h2>Flash: parsing XML content via ActionScript</h2>
+              <img src="img/whiteRose.png" alt="White Rose Gallery" class="img-thumbnail pull-left">
+              <p>The White Rose Gallery is the internet home of a portfolio/informational site for Sandy and Becky, artists in Charlotte. They needed an inexpensive presence on the web that they could update. So, I modified a flash template to suit her needs. Since she needed to be able to update the page herself, I used actionscript to pull in the content from a file, which allows her to update the flash template by simply editing a text file. The design is horid, but the code works!<br />
+              Its still running at <a href="http://thewhiterosegallery.com" target="_blank">http://thewhiterosegallery.com</a>
+              </p>
+            
+        </section>
+
+      <div class="year html-css joomla php"><h3>2009</h3></div>
+
+        <section id="box4" class="experience html-css"> <!-- Apex and Creative Hearts -->
+          
+              <h2>Honing CSS with Small Sites</h2>
+              <img src="img/creativeHearts.png" alt="Creative Hearts" class="img-thumbnail pull-left">
+              <p>In the summer of 2009 I buckled down and really learned CSS: the box model, best methods, and hacks. I worked with a design and graphics company called Videntities to build two sites for Creative hearts (a small dance studio) and Apex association (a co-working space in Charlotte). I implemented the design for both sites in a cross browser compatible combination of XHTML and CSS.
+              </p>
+            
+        </section>
+
+        <section id="box5" class="experience html-css joomla php"> <!-- Zao -->
+          
+              <h2>A Joomla Site</h2>
+              <img src="img/zao.png" alt="Zao Water" class="img-thumbnail pull-left">
+              <p>
+                 As part of an internship for a charitable business that sells water in the US and uses the profits to dig wells in Africa, I built them a new website on the Joomla CMS. Some of the key features I implemented on the site were:
+                 <ul>
+                  <li>share button functionality</li>
+                  <li>secure system to receive donations (paypal integration)</li>
+                  <li>flv and vimeo video integration</li>
+                 </ul>
+              </p>
+            
+        </section>
+
+      <div class="year html-css wordpress php jquery"><h3>2010</h3></div>
+
+        <section id="box6" class="experience html-css wordpress php jquery"> <!-- Kingsway, FFC, and CSS -->
+          
+              <h2>Churches Love Wordpress</h2>
+              <img src="img/wp-sm.png" alt="Wordpress" class="pull-left img-thumbnail">
+              <p>
+                 Around this time I started getting into Wordpress. Its free and there's a great community! However, I didn't yet realize what a pain it is to template inside.
+                 I handled all the front end development on the sites as well as setting up the server and DB. I was doing a lot of hacking in PHP for these sites.
+                 The church websites involved:
+                 <ul>
+                  <li>Creating a page to display calander information from Google Cal</li>
+                  <li>Setting up custom content types</li>
+                  <li>Creating a custom loop and template for the homepage</li>
+                  <li>Custom code to create a sermon archive page with links to audio files and video (if they existed)</li>
+                  <li>Some fancy frills in JQuery</li>
+                 </ul>
+                 
+                 <br />
+                 I built 3 websites on Wordpress. One each for Freedom Fellowship Church, Kingsway Church, and for a startup of mine called College Stuff Swap.
+
+              </p>
+            
+        </section>
+
+      <div class="year actionscript"><h3>2011</h3></div>
+
+        <section id="box7" class="experience actionscript"> <!-- Proj mgmt for Tres.com flash -->
+          
+              <h2>Project Management for Tresemme (Round 1)</h2>
+              <img src="img/tresemme.jpg" alt="Wordpress" class="pull-left img-thumbnail">
+              <p>
+                 Up until now, while working at <a href="http://www.techmuscle.com" target="_blank">TechMuscle</a>, my primary role had been in Quality Assurance. Over the summer I had more time to work, so they let me have a shot at doing project management for all the flash pieces that were being made for a new launch of Tresemme.com. This involved:
+                 <ul>
+                  <li>Interfacing between devs at TechMuscle, the developer at the Flash development company, Tresemme brand reps, and Giant Squid (a marketing/design agency)</li>
+                  <li>Making sure the right flashvars were present</li>
+                  <li>Making sure the flash developer knew the requirements</li>
+                 </ul>
+              <br />
+              I really enjoyed this work. So much in fact, that I soon got a promotion! (more on that next)
+              </p>
+            
+        </section>
+
+      <div class="year html-css jquery expressionengine"><h3>2012-2013</h3></div>
+
+        <section id="box8" class="experience"> <!-- project mgmt for Production Work on TRES -->
+          
+              <h2>I Stage a Hostile Takeover of Project Management</h2>
+              <img src="img/mbfw.jpg" alt="Wordpress" class="pull-left img-thumbnail">
+              <p>
+                 Okay, so it wasn't that hostile.
+                 <br />
+                 In the fall TechMuscle got a contract for all the production updates for all the <a href="http://www.tresemme.com/" target="_blank">Tresemme</a> brands (they have brands in just about every country) and I stepped into the role of project manager for all work requests and support requests from the brand. Part of the fun of this work was:
+                 <ul>
+                  <li>Making sure ALL assets for the Mercedes-Benz Fashion week were properly processed and added to the website. We had to turn the assets around same day. There were 3 fashion shows I managed.</li>
+                  <li>Managing a production team.</li>
+                  <li>Learning to use Photoshop and Illustrator</li>
+                  <li>Translating between the devs and the client (no small task!)</li>
+                  <li>Working with people who make shampoo you probably use.</li>
+                 </ul>
+
+                 I did this from May of 2012 to June of 2013 when I left the company.
+              </p>
+            
+        </section>
+
+        <section id="box9" class="experience html-css jquery"> <!-- KIT -->
+          
+              <h2>Designing Apps as Problem Solving</h2>
+              <img src="img/tm.png" alt="" class="pull-left img-thumbnail addPadding">
+              <p>
+                 As TechMuscle transitioned from a service company to a product company, I got to try my hand at design. At first I was intimidated because I don't do well with colors, but then I realized that design as problem solving - I can do that! The primary app I worked on UI for was an outlook plugin to improve email. This involved interfacing with C# methods and using jQuery to manipulate the html views. We used a combination of Kanban in JIRA and a Agile SCRUM process for development.
+                 <br /><br />
+                 My primary influences in that time were:
+                 <ul>
+                  <li><a href="http://feltpresence.com/" target="_blank">Ryan Singer</a> - UI designer for 37signals/Basecamp
+                    <br />
+                    He talks about <a href="http://feltpresence.com/articles/13-thinking-of-interfaces-as-sets-of-jobs" target="_blank">Interfaces as jobs</a> and gives good advice for <a href="http://feltpresence.com/articles/14-advice-for-product-managers" target="_blank">product managers</a>
+                    <br />
+                  </li>
+                  <li>
+                    <a href="http://whitneyhess.com/" target="_blank">Whitney Hess</a> is a UI/UX consultant.
+                    <br />
+                    She talks about <a href="http://whitneyhess.com/blog/2012/10/18/whats-your-problem-putting-purpose-back-into-your-projects/" target="_blank">understanding design as problem solving</a>.
+                  </li>
+                 </ul>
+              </p>
+            
+        </section>
+
+        <section id="box10" class="experience expressionengine"> <!-- SGA site // expression engine-->
+          
+              <h2>Expression Engine: A better CMS for SGA</h2>
+              <img id="sga" src="img/sga.png" alt="SGA" class="pull-left img-thumbnail addPadding">
+              <p>
+                 After working with wordpress for several years I got tired of writing REALLY complicated "if" statements and query modifiers to the loop to create custom pages, and discovered Expression Engine. I used Expression Engine for the <a href="http://www.iwusga.com/" target="_blank">new SGA website</a> (Student Government Association) at Indiana Wesleyan University. Working with designers and a developer in the UK I got to see how an EE site is set up, and got to work with global variables as well as the templating code they provide. A breath of fresh air after wordpress!
+              </p>
+            
+        </section>
+
+      <div class="year rails-github"><h3>2014</h3></div>
+
+        <section id="box11" class="experience rails-github"> <!-- RAILS -->
+          
+              <h2>Programming is fun with Ruby!</h2>
+              <img src="img/rails.png" alt="RoR" class="pull-left img-thumbnail">
+              <!-- <img src="img/github-sm.png" alt="github" class="pull-left clear"> -->
+              <p>
+                Lately I've been playing around with Ruby on Rails, and I REALLY like how straightforward the syntax is compared with other languages.
+                I have <a href="https://github.com/PulledPork/write">a project up on github</a>. The idea is to write something similar to www.medium.com. It's still in progress (i.e. no visual designs, etc), but I'm almost through writing a login system. I like the MVC paradigm, and would like to keep learning.
+              </p>
+            
+        </section>
+
+      <div class="spacer s50p"></div>
+
+  </div><!-- #wrapper -->
+</body>
+</html>

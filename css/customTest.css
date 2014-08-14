@@ -1,0 +1,174 @@
+/*
+	GENERAL
+*/
+body,
+html,
+#wrapper
+{
+	height: 100%;
+	/* #wrapper must be 100% so innerards can be whole frame tall if they want */
+}
+.relative{
+	position: relative;
+}
+
+/*
+	SIDEBAR
+*/
+#sidebar{
+	position: fixed;
+	width: 200px;
+	left: 20px;
+	top: 20%;
+}
+
+
+/*
+	SECIONS
+*/
+section.demo * {
+	font-size: 13px;
+}
+section.demo {
+	font-size: 0;
+	text-align: center;
+}
+section#titlechart {
+	text-align: center;
+	position: relative;
+	height: 75%;
+	min-height: 500px;
+	min-width: 100%;
+}
+section#titlechart #description ol{
+	text-align: left;
+	max-width: 400px;
+	margin: 10px auto 10px auto;
+	white-space: normal;
+}
+section#titlechart #description ol {
+	list-style-position: outside;
+}
+section#titlechart #description {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	width: 600px;
+	height: 200px;
+	margin: -100px auto auto -300px;
+}
+section#titlechart #description h1 {
+	margin: 0;
+}
+section#titlechart #description h2 {
+	margin-bottom: 20px;
+}
+
+/*
+	SPACING ELEMENTS
+
+	These classes just help to space out the scrolling.
+	Apply to a div to add proper spacing
+*/
+.spacer {
+	text-align: center;
+	min-height: 100px;
+}
+.spacer.s0 {
+	min-height: 1px;
+}
+.spacer.s1 {
+	min-height: 100px;
+}
+.spacer.s2 {
+	min-height: 200px;
+}
+.spacer.s3 {
+	min-height: 300px;
+}
+.spacer.s4 {
+	min-height: 400px;
+}
+.spacer.s5 {
+	min-height: 500px;
+}
+.spacer.s6 {
+	min-height: 600px;
+}
+.spacer.s7 {
+	min-height: 700px;
+}
+.spacer.s8 {
+	min-height: 800px;
+}
+.spacer.s9 {
+	min-height: 900px;
+}
+.spacer.s10 {
+	min-height: 1000px;
+}
+.spacer.s_viewport {
+	min-height: 100%;
+	min-width: 100%;
+	/* This class is used to make sure the scroll "start" can reache the trigger*/
+}
+
+.box1, .box2, .box3 {
+	display: inline-block;
+	position: relative;
+	border-radius: 8px;
+	text-align: center;
+	vertical-align: middle;
+}
+.box1 {
+	min-width: 100px;
+	height: 100px;
+	margin: 0 auto 0 auto;
+}
+.box2 {
+	min-width: 50px;
+	height: 50px;
+	margin: 25px auto 25px auto;
+}
+
+/*
+	COLORS
+*/
+.skin {
+	background-color: #ED9F4C;
+}
+.blue {
+	background-color: #3883d8;
+}
+
+/*
+	FOR TESTING ONLY
+*/
+.fish {
+	min-width: 500px;
+}
+
+#parallax{
+	margin-bottom: 250px;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+}
+
+#parallax #parallaxbg {
+	position: absolute;
+	height: 300px;
+	top: 50%;
+	width: 100%;
+	margin-top: -150px;
+	background-image: url("../scrollmagic/img/demo_parallax_bg.png");
+}
+#parallax h3 {
+	font-size: 80px;
+	text-align: center;
+	margin: -40px 0 0 0;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	line-height: 80px;
+}

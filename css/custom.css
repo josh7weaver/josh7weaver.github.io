@@ -1,0 +1,281 @@
+/*
+	GENERAL
+*/
+body,
+html,
+#wrapper
+{
+	height: 100%;
+	/* #wrapper must be 100% so innerards can be whole frame tall if they want */
+}
+body{
+	background-color: black;
+	background: url(../img/sky.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+div#background-image{ /* ONLY NEED THIS IF IMG IS TRANSPARENT*/
+	/*
+	background: url(https://s3.amazonaws.com/ooomf-com-files/4iDnRbhRayDf4Y5461Z9_Caroline%20Gutman-7248.jpg) right bottom no-repeat fixed;
+	background: url(https://s3.amazonaws.com/ooomf-com-files/ScZOGH4mSPSymlgYxwbn_reef%20insp-80.jpg) center center no-repeat fixed;
+	background: url(https://s3.amazonaws.com/ooomf-com-files/QSTuECF6S9mZ1CBm9cog_DSC07753.jpg) center center no-repeat fixed;
+	opacity: 0;
+	*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -10;
+	/*background-color: rgba(0,0,0,.1);*/
+}
+a,
+a:hover{
+	color: #FCA4A4;
+}
+
+/*
+	CONTAINERS
+*/
+#sidebar{
+	position: fixed;
+	width: 25%;
+	left: 5%;
+	top: 18%;
+	color: snow;
+}
+#wrapper{
+	margin-left: 25%;
+	width: 75%;
+	/*background-color: green;*/
+	color: snow;
+}
+
+#overlay{
+	z-index: -1;
+	height: 100%;
+	width: 75%;
+	left: 25%;
+	position: fixed;
+}
+#overlay div{
+	background-color: rgba(0,0,0,.4);
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+	/*display: none;*/
+}
+
+/*
+	SECIONS
+*/
+.experience,
+.year,
+.title
+{
+	margin: 0 auto;
+	width: 75%;
+	padding: 10px;
+}
+.experience{
+	/*background-color: rgba(0, 0, 0, 0.69);*/
+	margin-bottom: 40px;
+}
+/*
+	FONTS
+*/
+h1,h2,h3{ font-family: 'Open Sans', sans-serif; }
+h1{
+    font-size: 70px;
+    line-height: 85px;
+    font-weight: 600;
+    text-shadow: 3px 3px 6px black;
+}
+h2{
+    font-size: 45px;
+	line-height: 50px;
+	margin-bottom: .75em;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px black;
+}
+h3{
+	font-size: 30px;
+}
+h4{
+	margin: 0;
+	padding: 10px 0;
+}
+.experience,
+.year span,
+.title{
+	font-family: 'Merriweather', serif;;
+    font-size: 15px;
+	line-height: 20px;
+    /*color:rgb(233, 221, 221);*/
+    color: snow;
+	text-shadow: 1px 1px 16px black;
+}
+.experience p:first-line{
+	font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.title blockquote{
+	font-size: 22px;
+	line-height: 35px;
+}
+.title{
+	width: 403px;
+	margin: 0 auto;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+/*
+	CONTENT
+*/
+#message{
+	width: 100%;
+	position: fixed;
+}
+ul{
+	overflow: hidden;
+}
+#wrapper img{
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+#wrapper h2{
+	margin-top: 10px;
+	color: snow;
+}
+content {
+	font-style: italic;
+}
+.list-group-item{
+	background-color: transparent;
+	cursor: pointer;
+}
+#filterHeader{
+	cursor: pointer;
+	/*color: #FCA4A4;*/
+}
+#filterList,
+#filterHelperMessage{
+	display: none;
+}
+#filterList li.active{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+#filterList li.hover,
+#filterHeader.hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#profileImg{
+	width: 60%;
+	margin: 0 auto;
+}
+img#sga.img-thumbnail{
+	background-color: #104AB3;
+}
+.addPadding.img-thumbnail{
+	padding:10px;
+}
+#info{
+	margin-bottom: 25%;
+}
+#downArrow{
+	margin-top: 50%;
+	font-size: 11px;
+	opacity: .7;
+	font-style: normal;
+}
+#downArrow span{
+	font-size: 20px;
+}
+
+/*
+	LAYOUT
+*/
+.center{
+	text-align: center;
+}
+.clear{
+	clear:both;
+}
+.bold{
+	font-weight: bold;
+}
+.relative{
+	position: relative;
+}
+
+/*
+	SPACING ELEMENTS
+
+	These classes just help to space out the scrolling.
+	Apply to a div to add proper spacing
+*/
+.spacer {
+	text-align: center;
+	min-height: 100px;
+}
+.spacer.s0 {
+	min-height: 1px;
+}
+.spacer.s1 {
+	min-height: 100px;
+}
+.spacer.s2 {
+	min-height: 200px;
+}
+.spacer.s3 {
+	min-height: 300px;
+}
+.spacer.s4 {
+	min-height: 400px;
+}
+.spacer.s5 {
+	min-height: 500px;
+}
+.spacer.s6 {
+	min-height: 600px;
+}
+.spacer.s7 {
+	min-height: 700px;
+}
+.spacer.s8 {
+	min-height: 800px;
+}
+.spacer.s9 {
+	min-height: 900px;
+}
+.spacer.s10 {
+	min-height: 1000px;
+}
+.spacer.s_viewport {
+	min-height: 100%;
+	min-width: 100%;
+	/* This class is used to make sure the scroll "start" can reache the trigger*/
+}
+.spacer.s20p {
+	min-height: 25%;
+}
+.spacer.s50p {
+	min-height: 25%;
+}
+
+/*
+	COLORS
+*/
+
+/*
+<p class="bg-primary">...</p>
+<p class="bg-success">...</p>
+<p class="bg-info">...</p>
+<p class="bg-warning">...</p>
+<p class="bg-danger">...</p>
